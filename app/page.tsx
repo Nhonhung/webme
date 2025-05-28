@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react"
 import { Facebook, Github, Instagram } from "lucide-react"
+import { SiVercel, SiNetlify } from "react-icons/si";
 
 export default function ZLS() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -187,6 +188,20 @@ export default function ZLS() {
               color: "#1877F2",
               tooltip: "Facebook",
             },
+            {
+              icon: <SiVercel className="w-5 h-5" />,
+              label: "Vercel",
+              href: "https://vercel.com/phamducthinh20101015-9358s-projects",
+              color: "#000000",
+              tooltip: "Vercel",
+            },
+            {
+              icon: <SiNetlify className="w-5 h-5" />,
+              label: "Netlify",
+              href: "https://app.netlify.com/teams/pbayduc/projects",
+              color: "#00C7B7",
+              tooltip: "Netlify",
+            },
           ].map((social, index) => (
             <div key={index} className="relative group">
               <a
@@ -227,7 +242,7 @@ export default function ZLS() {
             className="text-white/80 font-black tracking-wide"
             style={{ fontSize: "18px", fontFamily: "Playfair Display, serif" }}
           >
-            Made with ZLS
+            Made by ZLS
           </span>
               </div>
       <style jsx>{`
